@@ -1,0 +1,38 @@
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black-color);
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .menu, .footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .right {
+  font-size: .9rem;
+  margin-left: 20px;
+}
+
+/* Taille de l'ecran mobile */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .footer .logo {
+    position: inherit;
+  }
+}

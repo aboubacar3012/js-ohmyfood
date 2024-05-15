@@ -1,0 +1,38 @@
+@import url('../shared/global.css');
+@import url('../shared/btn-explore.css');
+@import url('../shared/footer.css');
+@import url('./index-header.css');
+@import url('./index-fonctionnement.css');
+@import url('./index-location.css');
+@import url('./index-hero.css');
+@import url('./index-restaurants-card.css');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+
+/****** Media queries ***********/
+
+/* Ecran de taille inférieure à 1024px */
+@media (max-width: 1024px) {
+  
+
+}
+
+/* Ecran de taille inférieure à 768px */
+@media (max-width: 768px) {
+  
+}

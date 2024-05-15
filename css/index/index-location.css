@@ -1,0 +1,16 @@
+/* Location */
+.location {
+  background-color: var(--bg-secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+/* Taille de l'ecran mobile */
+@media screen and (max-width: 768px) {
+  .location {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+}
