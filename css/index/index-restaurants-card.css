@@ -1,7 +1,7 @@
 /* restaurants-cards */
 .restaurants {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
@@ -12,22 +12,23 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 
-.restaurants-cards h1{
+.restaurants-cards h1 {
   margin-left: 50px;
   padding: 20px 0px;
   font-size: 2rem;
 }
-.restaurants .card{
+
+.restaurants .card {
   position: relative;
-  max-width: 400px;
-  width: 400px;
+  max-width: 500px;
+  min-width: 480px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   margin-bottom: 20px;
 }
 
@@ -60,12 +61,17 @@
 
 /* Taille de l'ecran mobile */
 @media screen and (max-width: 768px) {
-  
-  .restaurants-cards h1{
+
+  .restaurants-cards h1 {
     margin-left: 0;
   }
 
-  .restaurants .card{
-    width:100%;
+  .restaurants .card {
+    width: 100%;
+  }
+
+  .restaurants .card {
+    max-width: 400px;
+    min-width: 350px;
   }
 }
