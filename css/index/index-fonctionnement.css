@@ -1,7 +1,7 @@
 /* Fonctionnement */
 .steps {
   background-color: white;
-  padding: 50px 0px;
+  padding: 50px 400px;
 }
 
 .steps h1 {
@@ -65,6 +65,11 @@
 
 /* Taille de l'ecran mobile */
 @media screen and (max-width: 768px) {
+  .steps {
+    background-color: white;
+    padding: 50px 0px;
+  }
+
   .steps h1 {
     margin-left: 30px;
   }

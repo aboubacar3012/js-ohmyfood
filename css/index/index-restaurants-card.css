@@ -5,6 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 0px 430px;
 }
 
 .restaurants-cards {
@@ -61,6 +62,9 @@
 
 /* Taille de l'ecran mobile */
 @media screen and (max-width: 768px) {
+  .restaurants {
+    padding: 0px 0px;
+  }
 
   .restaurants-cards h1 {
     margin-left: 0;

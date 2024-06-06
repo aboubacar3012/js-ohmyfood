@@ -21,10 +21,8 @@
 /* Styles de base */
 body {
   background-color: var(--bg-main-color);
-  max-width: 1024px;
   height: 100vh;
   margin: 0 auto;
-  position: relative;
 }
 
 a {
@@ -36,16 +34,16 @@ a {
 .header {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 20px 0;
+  padding: 20px 420px;
 }
 
 .header .left {
   font-size: 1.5rem;
   position: absolute;
-  left: 15px;
+  /* left: 15px; */
   cursor: pointer;
 }
 
@@ -54,29 +52,43 @@ a {
 }
 
 /* Bannière */
+.banner-img {
+  padding: 0px 400px;
+}
+
 .banner-img img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 300px;
-  margin-right: 20px;
+
+  /* margin-right: 20px; */
   object-fit: cover;
 }
 
+
 /* Main */
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   margin: 0 auto;
   margin-top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+  z-index: 7;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   width: 50%;
   background-color: var(--bg-secondary-color);
-  padding: 20px 180px;
-  border-radius: 50px;
+  padding: 20px 50px;
+  border-radius: 50px 50px 0 0;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+}
+
+main .dish {
+  padding: 0px 200px;
 }
 
 main .title {
@@ -87,7 +99,8 @@ main .title {
   text-align: center;
 }
 
-main .divider, main .divider-green {
+main .divider,
+main .divider-green {
   width: 3%;
   margin: auto;
   height: 2px;
@@ -155,13 +168,23 @@ main .card {
 
 /****** Media queries ***********/
 
-/* Ecran de taille inférieure à 1024px */
-@media (max-width: 1024px) {
-  
-
-}
 
 /* Ecran de taille inférieure à 768px */
 @media (max-width: 768px) {
-  
+  .banner-img {
+    padding: 0px;
+  }
+
+  .header {
+    padding: 20px 0px;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  main .dish {
+    padding: 0px 20px;
+  }
 }
