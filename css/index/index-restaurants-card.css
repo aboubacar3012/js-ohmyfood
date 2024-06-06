@@ -63,6 +63,9 @@
 /* Taille de l'ecran mobile */
 @media screen and (max-width: 768px) {
   .restaurants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0px 0px;
   }
 

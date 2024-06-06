@@ -6,3 +6,15 @@
 @import url('./index-location.css');
 @import url('./index-hero.css');
 @import url('./index-restaurants-card.css');
+@import url('./loader.css');
+
+.fa-heart {
+  font-size: x-large;
+  border: 1 px solid #000;
+  transition: color 1s ease;
+}
+
+.fa-heart:hover {
+  color: #9356DC;
+  cursor: pointer;
+}

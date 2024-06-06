@@ -42,8 +42,7 @@ a {
 
 .header .left {
   font-size: 1.5rem;
-  position: absolute;
-  /* left: 15px; */
+  padding-left: 10px;
   cursor: pointer;
 }
 
