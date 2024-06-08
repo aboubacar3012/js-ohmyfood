@@ -67,8 +67,12 @@
     padding: 0px 0px;
   }
 
+  .restaurants-cards {
+    padding: 10px 0px;
+  }
+
   .restaurants-cards h1 {
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .restaurants .card {
