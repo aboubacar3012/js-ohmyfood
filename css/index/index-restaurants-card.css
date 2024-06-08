@@ -1,24 +1,22 @@
 /* restaurants-cards */
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 350px;
+}
+
 .restaurants {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0px 430px;
+  padding: 0px;
 }
-
-.restaurants-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 0px;
-}
-
 
 .restaurants-cards h1 {
-  margin-left: 50px;
   padding: 20px 0px;
   font-size: 2rem;
 }
