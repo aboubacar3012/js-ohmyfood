@@ -129,26 +129,9 @@ main .card {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-.dish .card .check {
-  display: none;
-}
 
-.dish .card:hover .check {
-  display: block;
-  position: absolute;
-  right: 0;
-  border-radius: 0 20px 20px 0;
-  background-color: var(--green-color);
-  padding: 13px;
-}
 
-.dish .card:hover .price {
-  margin-right: 50px;
-}
 
-.dish .check i {
-  color: white;
-}
 
 .dish .content h3 {
   font-size: 0.8rem;
@@ -159,6 +142,44 @@ main .card {
   font-size: 0.7rem;
   font-weight: 200;
 }
+
+
+
+/* Check Btn animations */
+
+.dish .card .check {
+  width: 0;
+  opacity:0;
+  transition: width 0.5s ease;
+}
+
+.dish .card:hover .check {
+  width: 20px;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  border-radius: 0 20px 20px 0;
+  background-color: var(--green-color);
+  padding: 13px;
+  cursor: pointer;
+}
+
+.price {
+  transition: all 1s ease;
+  position: absolute;
+  right: 20px;
+}
+
+
+.dish .card:hover .price {
+  position:inherit;
+  margin-right: 20px;
+}
+
+.dish .check i {
+  color: white;
+}
+
 
 
 
