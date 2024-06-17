@@ -1,0 +1,23 @@
+/* heart btn */
+.fa-heart {
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.5 ease;
+}
+
+.regular {
+  color: #000;
+}
+
+.solid {
+  color: #9356DC;
+  display: none;
+}
+
+.icon-container:hover .regular {
+  display: none;
+}
+
+.icon-container:hover .solid {
+  display: block;
+}

@@ -1,6 +1,7 @@
 @import url('../shared/global.css');
 @import url('../shared/btn-explore.css');
 @import url('../shared/footer.css');
+@import url('../shared/heart-btn.css');
 
 /* Reset général */
 * {
@@ -65,6 +66,12 @@ a {
   object-fit: cover;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
 /* Main */
 main {
@@ -149,7 +156,7 @@ main .card {
 
 .dish .card .check {
   width: 0;
-  opacity:0;
+  opacity: 0;
   transition: width 0.5s ease;
 }
 
@@ -172,7 +179,7 @@ main .card {
 
 
 .dish .card:hover .price {
-  position:inherit;
+  position: inherit;
   margin-right: 20px;
 }
 
