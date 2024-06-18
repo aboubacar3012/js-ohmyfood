@@ -1,4 +1,5 @@
 /* Loader Styles */
+
 .loader-container {
   position: fixed;
   top: 0;
@@ -21,6 +22,7 @@
   border-radius: 50%;
   animation: spin 3s linear infinite;
 }
+
 
 @keyframes spin {
   0% {
@@ -47,7 +49,6 @@
   display: none;
 }
 
-/* Show the content after the loader disappears */
 body.loading #content {
   display: block;
 }

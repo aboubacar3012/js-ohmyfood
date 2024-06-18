@@ -98,7 +98,7 @@ main .dish {
 }
 
 main .title {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 800;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -148,6 +148,23 @@ main .card {
 .dish .content p {
   font-size: 0.7rem;
   font-weight: 200;
+}
+
+.dish .content {
+  width: 60%;
+}
+
+.dish .content h3,
+.dish .content p {
+  overflow: hidden;
+  /* Masque tout le contenu débordant */
+  text-overflow: ellipsis;
+  /* Affiche les points de suspension pour le texte débordant */
+  white-space: nowrap;
+  /* Empêche le texte de se dérouler sur plusieurs lignes */
+  display: block;
+  /* Assure que les éléments se comportent comme des blocs */
+  /* S'assure que l'élément prenne la largeur complète de son conteneur */
 }
 
 
@@ -213,5 +230,11 @@ main .card {
 
   main .dish {
     padding: 0px 20px;
+  }
+
+  .title h1 {
+    font-size: 1rem;
+    background-color: var(--bg-secondary-color);
+
   }
 }
